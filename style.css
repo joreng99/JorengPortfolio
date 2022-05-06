@@ -7,8 +7,9 @@
   --color-gray: #616161;
   --color-purple: #8559da;
   --color-dark-purple: #6734a2;
-  --color-light-purple: #b085f5;
+  --color-light-purple: #c09df7a5;
   --color-pinky-purple: #d05ce3;
+  --color-blue-purple: #461daf;
 
   /*Font size*/
   --font-large: 48px;
@@ -79,7 +80,7 @@ button {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-dark-purple);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 0 16px;
@@ -88,12 +89,12 @@ button {
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  transform: translateY(-20%);
+  transform: translateY(-15%);
 }
 .navbar__logo_jorengcon {
   height: 40px;
   width: 40px;
-  transform: translateY(40%);
+  transform: translateY(20%);
   margin: 0 10px;
 }
 .navbar__menu {
@@ -114,11 +115,14 @@ button {
 }
 /*Home*/
 #home {
-  background: url('images/배너.png') center/cover no-repeat;
-  padding: 40px;
+  background: url('images/배너3.jpg') center/cover no-repeat;
+  padding: 0 0 40px;
   text-align: center;
+  top: 0;
+  left: 0;
 }
 .home__avatar {
+  margin-top: 80px;
   width: 250px;
   height: 250px;
   border-radius: 50%;
