@@ -17,10 +17,7 @@
   </head>
   <body>
 
-
-    <!-- Home -->
-    <section id="home">
-          <!-- Navbar -->
+    <!-- Navbar -->
     <nav id="navbar">
       <div class="navbar__logo">
         <a href="#"><img class = "navbar__logo_jorengcon" src="images/jorengcon.png" alt="joreng"></a>
@@ -37,13 +34,16 @@
         </ul>
       </div>
     </nav>
+    <!-- Home -->
+    <section id="home">
       <img src="images/profile.jpg" alt="Joreng's profile photo" class="home__avatar">
       <h1 class="home__title">Hello,<br>I'm Jaerang Lim</h1>
       <h2 class="home__description">A Student majoring in Software and Physics in Ewha.w.univ</h2>
       <button class="home__contact">CONTACT ME<MEnu:toolbar></MEnu:toolbar></button>
     </section>
+    </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
       <h1>About me</h1>
       <p>이화여자대학교에서 물리학, 소프트웨어학을 복수전공 중인 4학년 재학생 입니다.<br>
         프론트엔드를 준비 중이지만, 백엔드 언어에도 관심을 가지고, 풀스택 개발자로 성장하고자 합니다.<br>
@@ -54,44 +54,51 @@
           <div class="major__icon">
             <i class="fa-brands fa-html5"></i>
           </div>
-          <div class="major__title">Front-end</div>
+          <h2 class="major__title">Front-end</h2>
           <div class="major__description">HTML, CSS, Javascript, Typescript</div>
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fa-brands fa-react"></i>
           </div>
-          <div class="major__title">Library</div>
+          <h2 class="major__title">Library</h2>
           <div class="major__description">React</div>
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fa-brands fa-node"></i>
           </div>
-          <div class="major__title">Others</div>
+          <h2 class="major__title">Others</h2>
           <div class="major__description">NodeJs, Java, Python, SQL</div>
         </div>
       </div>
       <div class="about__scores">
-        <div class="school">
-          <img src="images/ewha.png" alt="ewha">
-          <p class="school_name">Ewha Womans University : Software , Physics</p>
-          <p class="school_period">2018.02~2023.02</p>
-          <p class="school_score">???/4.5</p>
+        <div class="score">
+          <img class = "school__logo"" src="images/ewha.png" alt="ewha">
+          <div class="score__description">
+            <p>Ewha Womans University : Physics, Software B.A.</p>
+            <p>2018.02~2023.02</p>
+            <p>??? / 4.5</p>
+          </div>
         </div>
-        <div class="license">
+        <div class="score">
           <i class="fa-solid fa-id-card"></i>
-          <p class="license__licenselist">SQLD, 정보처리기사</p>
+          <div class="score__description">
+            <p>SQLD</p>
+            <p>정보처리기사</p>
+          </div>
         </div>
-        <div class="language">
+        <div class="score">
           <i class="fa-solid fa-earth-asia"></i>
-          <p class="license__toeic">TOEIC : ???/990</p>
-          <p class="license__opic">OPIC : ???</p>
+          <div class="score__description">
+            <p>TOEIC : ???/990</p>
+            <p>OPIC : ???</p>
+          </div>
         </div>
       </div>  
     </section>
     <!-- Skills -->
-    <section id="skill">
+    <section id="skill" class="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>그냥 좋은 말 쓰기 시간 잘지키고 등등</p>
@@ -175,7 +182,7 @@
       </div>
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
       <h1>My Works</h1>
       <p>Projects</p>
       <div class="work__categories">
@@ -188,7 +195,7 @@
         </a>
         <div class="project__description">
           <h3>Momentum</h3>
-          <span>Momentum app clone : todo, clock, weather, random images <br>html, css, vanilla JavaScript</span>
+          <span>Momentum app clone : todo, clock, weather, random images <br>html, css, vanilla javascript</span>
         </div>
         <a href="#" class="project" target="blank">
         <img class="project__img" src="images/projects/도라에몽리사이즈.png" alt="도라에몽">
@@ -214,7 +221,7 @@
       </div>
     </section>
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
       <h1>Testimonials</h1>
       <h3>See what they say about me</h3>
       <div class="testimonials">
@@ -235,7 +242,7 @@
       </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">sonwell09863@gmail.com</h2>
       <div class="contact__links">

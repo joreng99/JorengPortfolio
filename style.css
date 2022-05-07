@@ -2,14 +2,17 @@
 :root {
 
   /*Color*/
-  --color-white: #ffffff;
-  --color-black: #4d4d4d;
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: #222222;
+  --color-dark-gray: #393838;
   --color-gray: #616161;
   --color-purple: #8559da;
   --color-dark-purple: #6734a2;
-  --color-light-purple: #c09df7a5;
+  --color-light-purple: #8A5789;
   --color-pinky-purple: #d05ce3;
-  --color-blue-purple: #461daf;
+  --color-blue-purple: #2a1387;
+  --color-gold: #C2A513;
+
 
   /*Font size*/
   --font-large: 48px;
@@ -25,6 +28,9 @@
 
   /*Size*/
   --size-border-radius: 4px;
+
+  /*Animation*/
+  --animation-duration: 300ms;
 }
 
 /*Universal tags*/
@@ -43,6 +49,7 @@ ul {
   list-style: none;
   padding: 0;
 }
+
 /*Typography*/
 h1 {
   font-size: var(--font-large);
@@ -52,7 +59,7 @@ h1 {
 }
 h2 {
   font-size: var(--font-medium);
-  font-weight: var(--weight-regular);
+  font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
 }
@@ -68,6 +75,11 @@ p{
   color: var(--color-black);
   margin: 4px 0;
 }
+div {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+}
 button {
   background-color: transparent;
   cursor: pointer;
@@ -80,7 +92,7 @@ button {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: var(--color-dark-purple);
   align-items: center;
   color: var(--color-white);
   padding: 0 16px;
@@ -113,16 +125,16 @@ button {
 .navbar__menu__Item:hover {
   background-color: var(--color-light-purple);
 }
+
 /*Home*/
 #home {
   background: url('images/배너3.jpg') center/cover no-repeat;
-  padding: 0 0 40px;
+  padding: 40px;
   text-align: center;
   top: 0;
   left: 0;
 }
 .home__avatar {
-  margin-top: 80px;
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -140,4 +152,63 @@ button {
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
   color: var(--color-white);
+}
+
+/*Section common*/
+.section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*About*/
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+.major__icon {
+  width: 170px;
+  height: 170px;
+  font-size: 100px;
+  line-height: 170px;
+  margin: auto;
+  border: 1px solid var(--color-light-purple);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  color: var(--color-light-purple);
+}
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+.major__icon:hover i{
+  color: var(--color-gold);
+  transform: rotate(30deg) scale(1.1);
+}
+.major__title,
+.major__description {
+  color: var(--color-dark-gray);
+}
+.score {
+  display: flex;
+  align-items: center;
+}
+.school__logo {
+  height: 70px;
+  width: 70px;
+  margin: 20px 22px;
+}
+.score i {
+  font-size: 50px;
+  color: var(--color-gray);
+  margin: 20px 30px;
+}
+.score__description {
+  margin: 0 16px;
+  text-align: left;
+}
+.score__description p {
+  color: var(--color-gray);
+  font-size: var(--font-small);
 }
