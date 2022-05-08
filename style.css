@@ -44,7 +44,6 @@
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
-  min-width: 520px;
 }
 a {
   text-decoration: none;
@@ -344,7 +343,7 @@ button {
   background-color: var(--color-light-white);
 }
 .testimonials {
-  margin: 40px;
+  margin: 30px;
 }
 .testimonial {
   display: flex;
