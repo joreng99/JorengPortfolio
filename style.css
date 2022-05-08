@@ -5,13 +5,15 @@
   --color-white: hsl(0, 0%, 100%);
   --color-black: #222222;
   --color-dark-gray: #393838;
-  --color-gray: #616161;
+  --color-gray: #8f8f8fdd;
+  --color-gray2: #575757e5;
   --color-purple: #8559da;
   --color-dark-purple: #6734a2;
   --color-light-purple: #8A5789;
   --color-pinky-purple: #d05ce3;
   --color-blue-purple: #2a1387;
   --color-gold: #C2A513;
+  --color-yello: #f9f3c2;
 
 
   /*Font size*/
@@ -70,15 +72,10 @@ h3 {
   margin: 8px 0;
 }
 p{
-  font-size: var(--font-medium);
-  font-weight: var(--weight-regular);
-  color: var(--color-black);
-  margin: 4px 0;
-}
-div {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
+  margin: 4px 0;
 }
 button {
   background-color: transparent;
@@ -117,6 +114,7 @@ button {
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
+  color: var(--color-white);
 }
 .navbar__menu__Item.active {
   border: 2px solid var(--color-white);
@@ -158,7 +156,10 @@ button {
 .section {
   text-align: center;
   padding: 50px;
-  max-width: 1200px;
+  margin: auto;
+}
+.section__container {
+  max-width: 1200px;  
   margin: auto;
 }
 
@@ -211,4 +212,51 @@ button {
 .score__description p {
   color: var(--color-gray);
   font-size: var(--font-small);
+}
+
+/*Skill*/
+#skill {
+  background-color: var(--color-yello);
+}
+.skillset {
+  display: flex;
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  margin: 20px 0;
+}
+.skillset__title {
+  color: var(--color-white);
+}
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-gray);
+  padding: 20px 40px;
+}
+.skill {
+  margin-bottom: 32px;
+}
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-gray2);
+}
+.skill__value {
+  height: 3px;
+  background-color: var(--color-gold);
+}
+.skillset__right {
+  flex-basis: 40%;
+}
+.skillset__right .tools {
+  background-color: var(--color-gray2);
+}
+.tools,
+.etc {
+  padding: 20px;
+  align-items: center;
+  line-height: 28px;
 }
