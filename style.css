@@ -1,6 +1,6 @@
 /*Global*/
 :root {
-
+  
   /*Color*/
   --color-white: hsl(0, 0%, 100%);
   --color-dark-white: #d4d4d4;
@@ -44,6 +44,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
+  min-width: 520px;
 }
 a {
   text-decoration: none;
@@ -105,7 +106,7 @@ button {
   background-color: var(--color-dark-purple);
   align-items: center;
   color: var(--color-white);
-  padding: 16px;
+  padding: 0 16px;
 }
 .navbar__logo {
   font-size: var(--font-medium);
@@ -363,7 +364,6 @@ button {
 }
 .testimonial__speech-bubble {
   padding: 20px;
-  margin: 0 15px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
 }
