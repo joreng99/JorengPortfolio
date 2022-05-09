@@ -191,32 +191,33 @@
       <h1>My Works</h1>
       <p>Projects</p>
       <div class="work__categories">
-        <button class="category__btn active">All</button>
-        <button class="category__btn">React</button>
+        <button class="category__btn active" data-filter ="*">All</button>
+        <button class="category__btn" data-filter = "no-library">No-library</button>
+        <button class="category__btn" data-filter = "react">React</button>
       </div>
       <div class="work__projects">
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank" data-type = "no-library">
+          <img class="project__img" src="images/projects/portfolio4portfolio.png" alt="portfolio">
+          <div class="project__description">
+            <h3>Portfolio</h3>
+            <span>Portfolio site <br>html, css, Javascript</span>
+          </div>
+        </a>
+        <a href="#" class="project" target="blank" data-type = "no-library">
           <img class="project__img" src="images/projects/momentum4portfolio.PNG" alt="momentum">
           <div class="project__description">
             <h3>Momentum</h3>
-            <span>Momentum app clone<br>html, css, vanilla javascript</span>
+            <span>Momentum app clone<br>html, css, Javascript</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank" data-type="react">
           <img class="project__img" src="images/projects/도라에몽리사이즈.png" alt="도라에몽">
           <div class="project__description">
             <h3>도라에몽</h3>
             <span>도라에몽 클론코딩 with html, css</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
-          <img class="project__img" src="images/projects/도라에몽리사이즈.png" alt="도라에몽">
-          <div class="project__description">
-            <h3>도라에몽</h3>
-            <span>도라에몽 클론코딩 with html, css</span>
-          </div>
-        </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank" data-type="react">
           <img class="project__img" src="images/projects/도라에몽리사이즈.png" alt="도라에몽">
                 <div class="project__description">
           <h3>도라에몽</h3>

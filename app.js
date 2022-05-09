@@ -61,3 +61,26 @@ document.addEventListener('scroll', ()=>{
 arrowUp.addEventListener('click', ()=>{
   scrollIntoView('#home');
 })
+
+//Projects
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project')
+workBtnContainer.addEventListener('click', (e)=>{
+  const filter = e.target.dataset.filter;
+  if (filter == null) {
+    returen;
+  }
+  projectContainer.classList.add('anim-out');
+  setTimeout(()=>{
+    projects.forEach((project) => {
+      const projectType = project.dataset.type;
+      if (filter === '*' || filter === projectType) {
+        project.classList.remove('invisible');
+      } else {
+        project.classList.add('invisible');
+      }
+    });
+    projectContainer.classList.remove('anim-out')
+  }, 300);
+});
