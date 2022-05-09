@@ -1,6 +1,6 @@
 /*Global*/
 :root {
-  
+
   /*Color*/
   --color-white: hsl(0, 0%, 100%);
   --color-dark-white: #d4d4d4;
@@ -41,14 +41,17 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
 }
+
 a {
   text-decoration: none;
   color: var(--color-white);
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -61,24 +64,28 @@ h1 {
   color: var(--color-black);
   margin: 16px 0;
 }
+
 h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
 }
+
 h3 {
   font-size: var(--font-medium);
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 8px 0;
 }
-p{
+
+p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
 }
+
 button {
   background-color: transparent;
   cursor: pointer;
@@ -92,8 +99,9 @@ button {
   padding: 50px;
   margin: auto;
 }
+
 .section__container {
-  max-width: 1200px;  
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -111,23 +119,28 @@ button {
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
 }
+
 #navbar.navbar--dark {
   background-color: var(--color-dark-purple);
 }
+
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   transform: translateY(-15%);
 }
+
 .navbar__logo_jorengcon {
   height: 40px;
   width: 40px;
   transform: translateY(20%);
   margin: 0 10px;
 }
+
 .navbar__menu {
   display: flex;
 }
+
 .navbar__menu__Item {
   padding: 8px 12px;
   margin: 0 4px;
@@ -136,11 +149,13 @@ button {
   color: var(--color-white);
   border: 2px solid transparent;
 }
+
 .navbar__menu__Item:hover {
   background-color: var(--color-light-purple);
   border-radius: var(--size-border-radius);
   border: 2px solid var(--color-white);
 }
+
 .navbar__toggle-btn {
   position: absolute;
   right: 15px;
@@ -159,16 +174,19 @@ button {
   top: 0;
   left: 0;
 }
+
 .home__avatar {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: 2px solid var(--color-white);
 }
+
 .home__description,
 .home__title {
   color: var(--color-white);
 }
+
 .home__contact {
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
@@ -178,17 +196,23 @@ button {
   border-radius: var(--size-border-radius);
   color: var(--color-white);
 }
+
 .home__contact:hover {
   background-color: var(--color-light-purple);
   opacity: 0.8;
 }
 
 /*About*/
+.about__me {
+  color: var(--color-black);
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
   margin: 80px 0;
 }
+
 .major__icon {
   width: 170px;
   height: 170px;
@@ -200,80 +224,104 @@ button {
   margin-bottom: 16px;
   color: var(--color-light-purple);
 }
+
 .major__icon i {
   transition: all var(--animation-duration) ease;
 }
-.major__icon:hover i{
+
+.major__icon:hover i {
   color: var(--color-gold);
   transform: rotate(30deg) scale(1.1);
 }
+
 .major__title,
 .major__description {
   color: var(--color-dark-gray);
 }
+
 .score {
   display: flex;
   align-items: center;
 }
+
 .school__logo {
   height: 70px;
   width: 70px;
   margin: 20px 22px;
 }
+
 .score i {
   font-size: 50px;
   color: var(--color-gray);
   margin: 20px 30px;
 }
+
 .score__description {
   margin: 0 16px;
   text-align: left;
 }
+
 .score__description p {
-  color: var(--color-gray);
+  color: var(--color-dark-gray);
   font-size: var(--font-small);
 }
 
 /*Skill*/
 #skill {
-  background-color: var(--color-yello);
+  background: url('/images/배너.png') center/cover no-repeat;
 }
+
 .skillset {
   display: flex;
   background-color: var(--color-gray);
   color: var(--color-white);
   margin: 20px 0;
 }
+
 .skillset__title {
   color: var(--color-white);
 }
+
 .skillset__left {
   flex-basis: 60%;
   background-color: var(--color-dark-gray);
   padding: 20px 40px;
 }
+
 .skill {
   margin-bottom: 32px;
 }
+
+.skill__head h1,
+h2,
+p {
+  color: var(--color-light-white);
+}
+
 .skill__description {
   display: flex;
   justify-content: space-between;
 }
+
 .skill__bar {
   width: 100%;
   height: 3px;
   background-color: var(--color-gray2);
 }
+
 .skill__value {
   height: 3px;
   background-color: var(--color-gold);
 }
+
 .skillset__right {
   flex-basis: 40%;
 }
+
 .skillset__right .tools {
   background-color: var(--color-gray2);
 }
+
 .tools,
 .etc {
   padding: 20px;
@@ -285,6 +333,7 @@ button {
 .work__categories {
   margin: 40px;
 }
+
 .category__btn {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
@@ -293,11 +342,13 @@ button {
   width: 120px;
   text-align: center;
 }
+
 .category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-dark-purple);
   color: var(--color-white);
 }
+
 .work__projects {
   display: flex;
   flex-wrap: wrap;
@@ -305,10 +356,12 @@ button {
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
 }
+
 .work__projects.anim-out {
   opacity: 0;
   transform: scale(0.96) translateY(40px);
 }
+
 .project {
   width: 250px;
   height: 200px;
@@ -319,17 +372,21 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 .project.invisible {
   display: none;
 }
+
 .project__img {
   max-width: 100%;
   max-height: 100%;
 }
-.project:hover .project__description{
+
+.project:hover .project__description {
   opacity: 0.8;
   transform: translateY(0px);
 }
+
 .project__description {
   position: absolute;
   top: 0;
@@ -344,9 +401,11 @@ button {
   transform: translateY(10px);
   transition: all var(--animation-duration) ease-in;
 }
+
 .project__description h3 {
   color: var(--color-yello);
 }
+
 .project__description h3:after {
   content: '';
   width: 50px;
@@ -363,33 +422,41 @@ button {
 #testimonials {
   background-color: var(--color-light-white);
 }
+
 .testimonials {
   margin: 30px;
 }
+
 .testimonial {
   display: flex;
   margin: 32px 0;
   align-items: center;
 }
+
 .testimonial__avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
+
 .testimonial__avatar:nth-child(odd) {
   margin-right: 42px;
 }
+
 .testimonial__avatar:nth-child(even) {
   margin-left: 42px;
 }
+
 .testimonial__speech-bubble {
   padding: 20px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
 }
+
 .testimonial__speech-bubble p {
   color: var(--color-gray);
 }
+
 .testimonial__speech-bubble a {
   color: var(--color-dark-purple);
 }
@@ -398,20 +465,24 @@ button {
 #contact {
   background-color: var(--color-dark-purple);
 }
+
 .contact__email,
 .contact__links,
 .contact__title,
 .contact__rights {
   color: var(--color-white);
 }
+
 .contact__title {
   margin: 32px 0;
 }
+
 .contact__links {
   font-size: var(--font-large);
   margin: 24px 0;
   transition: all var(--animation-duration) ease-in;
 }
+
 .contact__links i:hover {
   transform: scale(1.1);
 }
@@ -431,85 +502,104 @@ button {
   transition: all var(--animation-duration) ease-in;
   pointer-events: none;
 }
+
 .arrowUp.visible {
   opacity: 1;
   pointer-events: auto;
 }
+
 /*for below 768px screen*/
 @media screen and (max-width: 768px) {
   :root {
-      /*Font size*/
-  --font-large: 30px;
-  --font-medium: 18px;
-  --font-regular: 16px;
-  --font-small: 14px;
-  --font-micro: 12px;
+    /*Font size*/
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
   }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-dark-purple);
     padding: 4px 0;
   }
+
   .navbar__logo_jorengcon {
     width: 30px;
     height: 30px;
     margin-top: 10px;
   }
+
   .navbar__logo {
     font-size: 25px;
   }
+
   .navbar__toggle-btn {
     display: block;
     top: 13px;
   }
+
   .navbar__menu {
     flex-direction: column;
     width: 100%;
     text-align: center;
     display: none;
   }
+
   .navbar__menu.open {
     display: block;
   }
+
   .section {
     padding: 16px;
     padding-top: 40px;
   }
+
   .about__majors {
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 0px;
   }
+
   .major {
     margin-bottom: 30px;
   }
+
   .skillset {
     flex-direction: column;
   }
+
   .category__btn {
     margin: 4px 0;
     width: 100%;
   }
+
   .project {
     flex-grow: 1;
   }
+
   .testimonial {
     flex-direction: column;
     align-items: center;
   }
+
   .testimonial__avatar {
     width: 100px;
     height: 100px;
   }
+
   .testimonial__avatar:nth-child(odd),
   .testimonial__avatar:nth-child(even) {
     margin: 0;
     margin-bottom: 8px;
   }
+
   .testimonial__speech-bubble {
     order: 1;
   }
+
   .arrowUp {
     font-size: 25px;
     line-height: 40px;
