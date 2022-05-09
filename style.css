@@ -203,9 +203,6 @@ button {
 }
 
 /*About*/
-.about__me {
-  color: var(--color-black);
-}
 
 .about__majors {
   display: flex;
@@ -293,8 +290,8 @@ button {
 }
 
 .skill__head h1,
-h2,
-p {
+.skill__head h2,
+.skill__head p {
   color: var(--color-light-white);
 }
 
