@@ -150,10 +150,13 @@ button {
   border: 2px solid transparent;
 }
 
+.navbar__menu__Item.active {
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+}
 .navbar__menu__Item:hover {
   background-color: var(--color-light-purple);
   border-radius: var(--size-border-radius);
-  border: 2px solid var(--color-white);
 }
 
 .navbar__toggle-btn {
@@ -471,7 +474,7 @@ button {
 }
 
 .contact__title {
-  margin: 32px 0;
+  margin: 0 0 32px 0;
 }
 
 .contact__links {

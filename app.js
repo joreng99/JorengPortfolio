@@ -11,11 +11,6 @@ document.addEventListener('scroll', ()=> {
   }
 });
 
-function scrollIntoView(selector){
-  const scrollTo = document.querySelector(selector)
-  scrollTo.scrollIntoView({behavior:'smooth'});
-}
-
 //Handle scrolling when Tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event)=>{
@@ -24,8 +19,7 @@ navbarMenu.addEventListener('click', (event)=>{
   if (link == null) {
     return;
   }
-  scrollIntoView(link)
-  navbarMenu.classList.remove('open')
+  scrollIntoView(link);
 });
 
 //Show menu when toggle is clicked
@@ -90,3 +84,64 @@ workBtnContainer.addEventListener('click', (e)=>{
     projectContainer.classList.remove('anim-out')
   }, 300);
 });
+
+//Make border line on the navbar menu when the section is shown
+
+const sectionIds = [
+  '#home',
+  '#about',
+  '#skill',
+  '#work',
+  '#testimonials',
+  '#contact',
+];
+
+
+const sections = sectionIds.map(id => document.querySelector(id));
+const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
+let selectedNavIndex = 0;
+let selectedNavItem = navItems[0];
+
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.4,
+};
+const observerCallback = (entries, observer) => {
+  entries.forEach(entry =>{
+    if(!entry.isIntersecting && entry.intersectionRatio > 0) {
+      const index = sectionIds.indexOf(`#${entry.target.id}`);
+      if (entry.boundingClientRect.y < 0 ) {
+        selectedNavIndex = index + 1;
+      } else {
+        selectedNavIndex = index - 1;
+      }
+    }
+  });
+};
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+sections.forEach(section => observer.observe(section));
+
+window.addEventListener('wheel',() => {
+  if (window.scrollY === 0) {
+    selectedNavIndex = 0;
+  } else if (Math.round(window.scrollY + window.innerHeight) >= document.body.clientHeight) {
+    selectedNavIndex = navItems.length - 1;
+  }
+  selectNavItem(navItems[selectedNavIndex]);
+});
+
+// function
+
+function selectNavItem(selected) {
+  selectedNavItem.classList.remove('active');
+  selectedNavItem = selected;
+  selectedNavItem.classList.add('active');
+}
+
+function scrollIntoView(selector){
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior:'smooth'});
+  selectNavItem(navItems[sectionIds.indexOf(selector)]);
+}
+
