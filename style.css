@@ -181,8 +181,10 @@ button {
 .home__avatar {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+  border-radius: 30%;
   border: 2px solid var(--color-white);
+  transition: 500ms;
+  
 }
 
 .home__description,
