@@ -51,10 +51,17 @@
     <section id="about" class="section section__container">
       <h1>About me</h1>
       <p style="font-family: 'Noto Sans KR', sans-serif;">이화여자대학교에서 물리학, 소프트웨어학을 복수전공 중인 4학년 재학생 입니다.<br>
-        프론트엔드 개발자를 준비중이며, 백엔드 언어에도 관심을 가지고 풀스택 개발자로 성장하고자 합니다.
-        수학, 물리학에 관심이 많고, MZ세대의 트렌드를 빠르게 캐치합니다.
+        백엔드 웹개발자를 준비중이며, 프론트엔드 언어에도 관심을 가지고 풀스택 개발자로 성장하고자 합니다.<br>
+        수학, 물리학 분야에 관심이 많습니다.
       </p>
       <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <div class="major__description">Java, Python</div>
+        </div>
         <div class="major">
           <div class="major__icon">
             <i class="fa-brands fa-html5"></i>
@@ -64,17 +71,10 @@
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fa-brands fa-react"></i>
+            <i class="fa-solid fa-database"></i>
           </div>
-          <h2 class="major__title">Library</h2>
-          <div class="major__description">React</div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-python"></i>
-          </div>
-          <h2 class="major__title">Others</h2>
-          <div class="major__description">Python, Java</div>
+          <h2 class="major__title">DataBase</h2>
+          <div class="major__description">SQL</div>
         </div>
       </div>
       <div class="about__scores">
@@ -88,8 +88,8 @@
         <div class="score">
           <i class="fa-solid fa-id-card"></i>
           <div class="score__description">
-            <p></p>
-            <p style="font-family: 'Noto Sans KR', sans-serif;"></p>
+            <p>정보처리기사</p>
+            <p>SQLD</p>
           </div>
         </div>
         <div class="score">
@@ -113,16 +113,25 @@
           <h3 class="skillset__title">skills</h3>
           <div class="skill">
             <div class="skill__description">
-              <span>HTML</span>
-              <span>90%</span>
+              <span>Java</span>
+              <span>0%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width:90%;"></div>
+              <div class="skill__value" style="width:0%;"></div>
             </div>
           </div>
           <div class="skill">
             <div class="skill__description">
-              <span>CSS</span>
+              <span>Python</span>
+              <span>70%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:70%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML, CSS</span>
               <span>70%</span>
             </div>
             <div class="skill__bar">
@@ -138,16 +147,6 @@
               <div class="skill__value" style="width:60%;"></div>
             </div>
           </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>React</span>
-              <span>20%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width:30%;"></div>
-            </div>
-          </div>
-
           
         </div>
         <div class="skillset__right">
@@ -162,8 +161,8 @@
             <h3 class="skillset__title">Etc</h3>
             <ul class=stc__list">
               <li><span>Math & Physics</span></li>
-              <li><span>WebCrawling & Analysis with Python</span></li>
-              <li><span></span></li>
+              <li><span>DataBase with SQL</span></li>
+              <li><span>Spring framework</span></li>
             </ul>
           </div>
         </div>
@@ -176,37 +175,38 @@
       <p>Projects</p>
       <div class="work__categories">
         <button class="category__btn selected" data-filter ="*">All</button>
-        <button class="category__btn" data-filter = "no-library">No-library</button>
-        <button class="category__btn" data-filter = "react">React</button>
+        <button class="category__btn" data-filter = "Back-end">Back-end</button>
+        <button class="category__btn" data-filter = "Front-end">Front-end</button>
+        <button class="category__btn" data-filter = "Full-stack">Full-stack</button>
       </div>
       <div class="work__projects">
-        <a href="https://jorengportfolio.netlify.app" class="project" target="blank" data-type = "no-library">
+        <a href="#" class="project" target="blank" data-type="Back-end">
+          <img class="project__img" src="images/projects/도라에몽리사이즈.png" alt="도라에몽">
+                <div class="project__description">
+          <h3></h3>
+          <span></span>
+        </div>
+        </a>
+        <a href="https://jorengportfolio.netlify.app" class="project" target="blank" data-type = "Front-end">
           <img class="project__img" src="images/projects/portfolio4portfolio.png" alt="portfolio">
           <div class="project__description">
             <h3>Portfolio</h3>
             <span>Portfolio site <br>html, css, Javascript</span>
           </div>
         </a>
-        <a href="https://momocafe.netlify.app" class="project" target="blank" data-type = "no-library">
+        <a href="https://momocafe.netlify.app" class="project" target="blank" data-type = "Front-end">
           <img class="project__img" src="images/projects/cafemomo4portfolio.png" alt="cafemomo">
           <div class="project__description">
             <h3>CafeMomo</h3>
             <span>Cafe web site<br>html, css, Javascript</span>
           </div>
         </a>
-        <a href="https://joreng99.github.io/movie-app/" class="project" target="blank" data-type="react">
+        <a href="https://joreng99.github.io/movie-app/" class="project" target="blank" data-type="Front-end">
           <img class="project__img" src="images/projects/movieapp4portfolio.png" alt="movieapp">
           <div class="project__description">
             <h3>MovieApp</h3>
             <span>Movie information web site<br>React</span>
           </div>
-        </a>
-        <a href="#" class="project" target="blank" data-type="react">
-          <img class="project__img" src="images/projects/도라에몽리사이즈.png" alt="도라에몽">
-                <div class="project__description">
-          <h3></h3>
-          <span></span>
-        </div>
         </a>
       </div>
     </section>
